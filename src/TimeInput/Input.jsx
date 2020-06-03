@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'merge-class-names';
 import updateInputWidth, { getFontShorthand } from 'update-input-width';
+import predictInputValue from '@wojtekmaj/predict-input-value';
 
 /* eslint-disable jsx-a11y/no-autofocus */
 
@@ -35,23 +36,14 @@ function updateInputWidthOnFontLoad(element) {
   document.fonts.addEventListener('loadingdone', onLoadingDone);
 }
 
-function getSelectionString() {
-  if (typeof window === 'undefined') {
-    return null;
-  }
-
-  return window.getSelection().toString();
-}
-
-function makeOnKeyPress(maxLength) {
+function makeOnKeyPress(max) {
   return function onKeyPress(event) {
-    const { key, target: input } = event;
-    const { value } = input;
+    const { key } = event;
 
     const isNumberKey = !isNaN(parseInt(key, 10));
-    const selection = getSelectionString();
+    const nextValue = predictInputValue(event);
 
-    if (isNumberKey && (selection || value.length < maxLength)) {
+    if (isNumberKey && (nextValue <= max)) {
       return;
     }
 
@@ -79,7 +71,6 @@ export default function Input({
   value,
 }) {
   const hasLeadingZero = showLeadingZeros && value !== null && value < 10;
-  const maxLength = max.toString().length;
 
   return [
     (hasLeadingZero && <span key="leadingZero" className={`${className}__leadingZero`}>0</span>),
@@ -95,13 +86,14 @@ export default function Input({
       )}
       data-input="true"
       disabled={disabled}
+      inputMode="numeric"
       max={max}
       min={min}
       name={name}
       onChange={onChange}
       onFocus={onFocus}
       onKeyDown={onKeyDown}
-      onKeyPress={makeOnKeyPress(maxLength)}
+      onKeyPress={makeOnKeyPress(max)}
       onKeyUp={(event) => {
         updateInputWidth(event.target);
 
@@ -122,7 +114,7 @@ export default function Input({
       }}
       required={required}
       step={step}
-      type="number"
+      type="text"
       value={value !== null ? value : ''}
     />,
   ];
