@@ -118,9 +118,9 @@ describe('TimeInput', () => {
     const customInputs = component.find('input[data-input]');
 
     expect(nativeInput.prop('value')).toBe(date);
-    expect(customInputs.at(0).prop('value')).toBe(10);
-    expect(customInputs.at(1).prop('value')).toBe(17);
-    expect(customInputs.at(2).prop('value')).toBe(0);
+    expect(customInputs.at(0).prop('value')).toBe('10');
+    expect(customInputs.at(1).prop('value')).toBe('17');
+    expect(customInputs.at(2).prop('value')).toBe('0');
   });
 
   itIfFullICU('shows a given time in all inputs correctly (24-hour format)', () => {
@@ -139,9 +139,9 @@ describe('TimeInput', () => {
     const customInputs = component.find('input[data-input]');
 
     expect(nativeInput.prop('value')).toBe(date);
-    expect(customInputs.at(0).prop('value')).toBe(22);
-    expect(customInputs.at(1).prop('value')).toBe(17);
-    expect(customInputs.at(2).prop('value')).toBe(0);
+    expect(customInputs.at(0).prop('value')).toBe('22');
+    expect(customInputs.at(1).prop('value')).toBe('17');
+    expect(customInputs.at(2).prop('value')).toBe('0');
   });
 
   it('shows empty value in all inputs correctly given null', () => {

@@ -106,7 +106,7 @@ describe('MinuteInput', () => {
   });
 
   it('displays given value properly', () => {
-    const value = 11;
+    const value = '11';
 
     const component = mount(
       <MinuteInput
