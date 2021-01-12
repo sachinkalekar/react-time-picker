@@ -1378,39 +1378,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@guidesly/react-time-picker@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@guidesly/react-time-picker@workspace:."
-  dependencies:
-    "@babel/cli": ^7.8.0
-    "@babel/core": ^7.9.0
-    "@babel/plugin-proposal-class-properties": ^7.8.0
-    "@babel/preset-env": ^7.9.0
-    "@babel/preset-react": ^7.9.0
-    "@wojtekmaj/date-utils": ^1.0.0
-    "@wojtekmaj/enzyme-adapter-react-17": ^0.3.1
-    babel-eslint: ^10.0.0
-    enzyme: ^3.10.0
-    eslint: ^7.12.0
-    eslint-config-wojtekmaj: ^0.5.0
-    get-user-locale: ^1.2.0
-    jest: ^26.6.0
-    less: ^3.8.1
-    make-event-props: ^1.1.0
-    merge-class-names: ^1.1.1
-    prop-types: ^15.6.0
-    react: ^17.0.0
-    react-clock: ^3.0.0
-    react-dom: ^17.0.0
-    react-fit: ^1.0.3
-    rimraf: ^3.0.0
-    update-input-width: ^1.1.1
-  peerDependencies:
-    react: ^16.3.0 || ^17.0.0-0
-    react-dom: ^16.3.0 || ^17.0.0-0
-  languageName: unknown
-  linkType: soft
-
 "@istanbuljs/load-nyc-config@npm:^1.0.0":
   version: 1.0.0
   resolution: "@istanbuljs/load-nyc-config@npm:1.0.0"
@@ -4141,6 +4108,39 @@ fsevents@^2.1.2:
   checksum: c87f7e8c785cac6ee60719c9d62f7d790a85dafa13d62c4667664e3a21ee771f5fd19df3f374d2f7bdf297b8f687cf70e19bb066aba4832e6f6caa5190812578
   languageName: node
   linkType: hard
+
+"guidesly-react-time-picker@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "guidesly-react-time-picker@workspace:."
+  dependencies:
+    "@babel/cli": ^7.8.0
+    "@babel/core": ^7.9.0
+    "@babel/plugin-proposal-class-properties": ^7.8.0
+    "@babel/preset-env": ^7.9.0
+    "@babel/preset-react": ^7.9.0
+    "@wojtekmaj/date-utils": ^1.0.0
+    "@wojtekmaj/enzyme-adapter-react-17": ^0.3.1
+    babel-eslint: ^10.0.0
+    enzyme: ^3.10.0
+    eslint: ^7.12.0
+    eslint-config-wojtekmaj: ^0.5.0
+    get-user-locale: ^1.2.0
+    jest: ^26.6.0
+    less: ^3.8.1
+    make-event-props: ^1.1.0
+    merge-class-names: ^1.1.1
+    prop-types: ^15.6.0
+    react: ^17.0.0
+    react-clock: ^3.0.0
+    react-dom: ^17.0.0
+    react-fit: ^1.0.3
+    rimraf: ^3.0.0
+    update-input-width: ^1.1.1
+  peerDependencies:
+    react: ^16.3.0 || ^17.0.0-0
+    react-dom: ^16.3.0 || ^17.0.0-0
+  languageName: unknown
+  linkType: soft
 
 "har-schema@npm:^2.0.0":
   version: 2.0.0

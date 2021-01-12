@@ -1,5 +1,5 @@
 {
-  "name": "@guidesly/react-time-picker",
+  "name": "guidesly-react-time-picker",
   "version": "0.0.1",
   "description": "A time picker for your React app.",
   "main": "dist/entry.js",
