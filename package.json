@@ -1,6 +1,6 @@
 {
-  "name": "react-time-picker",
-  "version": "4.1.2",
+  "name": "@guidesly/react-time-picker",
+  "version": "0.0.1",
   "description": "A time picker for your React app.",
   "main": "dist/entry.js",
   "source": "src/entry.js",
@@ -35,8 +35,8 @@
     "time-picker"
   ],
   "author": {
-    "name": "Wojciech Maj",
-    "email": "kontakt@wojtekmaj.pl"
+    "name": "Sachin Kalekarr",
+    "email": "sachin.kalekarr@guidesly.com"
   },
   "license": "MIT",
   "dependencies": {
@@ -78,7 +78,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/wojtekmaj/react-time-picker.git"
+    "url": "https://github.com/sachinkalekar/react-time-picker.git"
   },
   "funding": "https://github.com/wojtekmaj/react-time-picker?sponsor=1"
 }
