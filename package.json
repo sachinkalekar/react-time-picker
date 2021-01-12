@@ -1,6 +1,6 @@
 {
   "name": "guidesly-react-time-picker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A time picker for your React app.",
   "main": "dist/entry.js",
   "source": "src/entry.js",
