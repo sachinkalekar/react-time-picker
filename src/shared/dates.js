@@ -14,7 +14,7 @@ export function convert24to12(hour24) {
   let hour12 = hour24 % 12 || 12;
 
   if (hour24 === 0) {
-    hour12 = 12;
+    hour12 = 0;
   }
 
   return [hour12, hour24 < 12 ? 'am' : 'pm'];
