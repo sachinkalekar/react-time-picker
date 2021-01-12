@@ -11,7 +11,11 @@ export function convert12to24(hour12, amPm) {
 }
 
 export function convert24to12(hour24) {
-  const hour12 = hour24 % 12 || 12;
+  let hour12 = hour24 % 12 || 12;
+
+  if (hour24 === 0) {
+    hour12 = 12;
+  }
 
   return [hour12, hour24 < 12 ? 'am' : 'pm'];
 }
