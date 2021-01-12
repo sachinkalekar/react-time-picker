@@ -119,18 +119,3 @@ TimePicker component passes all props to React-Clock, with the exception of `cla
 ## License
 
 The MIT License.
-
-## Author
-
-<table>
-  <tr>
-    <td>
-      <img src="https://github.com/wojtekmaj.png?s=100" width="100">
-    </td>
-    <td>
-      Wojciech Maj<br />
-      <a href="mailto:kontakt@wojtekmaj.pl">kontakt@wojtekmaj.pl</a><br />
-      <a href="http://wojtekmaj.pl">http://wojtekmaj.pl</a>
-    </td>
-  </tr>
-</table>
