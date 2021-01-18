@@ -141,6 +141,7 @@ export default class TimePicker extends PureComponent {
       secondAriaLabel,
       secondPlaceholder,
       value,
+      showLeadingZeros
     } = this.props;
 
     const [valueFrom] = [].concat(value);
@@ -178,6 +179,7 @@ export default class TimePicker extends PureComponent {
           placeholder={this.placeholder}
           required={required}
           value={valueFrom}
+          showLeadingZeros={showLeadingZeros}
         />
         {clearIcon !== null && (
           <button
