@@ -92,7 +92,6 @@ export default function Input({
   const maxLength = max.toString().length;
 
   return [
-    (hasLeadingZero && <span key="leadingZero" className={`${className}__leadingZero`}>0</span>),
     <input
       key="input"
       aria-label={ariaLabel}
